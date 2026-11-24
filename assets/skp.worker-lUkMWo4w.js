@@ -1,0 +1,1 @@
+self.onmessage=async e=>{try{let{buildScene:t,toGLB:n}=await import(`./dist-B42AbZ0E.js`),r=n(t(e.data,{respectEdgeVisibility:!0}),{textures:!0});self.postMessage({ok:!0,glb:r},[r.buffer])}catch(e){let t=e instanceof Error?e.message:String(e);self.postMessage({ok:!1,error:t.slice(0,200)})}};
